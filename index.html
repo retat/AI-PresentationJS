@@ -1,131 +1,180 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>AI Presentation</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/black.css">
-        <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/monokai.css">
-        <!-- Printing and PDF exports -->
-        <script>
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-            document.getElementsByTagName('head')[0].appendChild(link);
-        </script>
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section data-background-image="assets/aiLogo.gif" data-background-size="30%"
-                         data-background-position="50% 0%" data-background-color="black">
-                    <div style="background-color: white; color:black; margin-top: 15%;"
-                         class="fragment fade-out">
-                        Mitverfolgen unter
-                        ai.reneborner.de
-                    </div>
-                    <h3 class="fragment fade-up">die größte und letzte Innovation der Menschheit?</h3>
-                </section>
-                <section>
-                    <h2>Methodik</h2>
-                    <aside class="notes">
-                        Noch kurz ein paar Informationen zu meiner Methodik
-                    </aside>
-                </section>
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Gliederung
-                        - Definitionen <!-- .element: class="fragment" -->
-                        - Geschichte <!-- .element: class="fragment" -->
-                        - Machine Learning <!-- .element: class="fragment" -->
-                        - Anwendungen <!-- .element: class="fragment" -->
-                        - Zukunft <!-- .element: class="fragment" -->
-                        - Fazit <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-                <section>
-                    <section>
-                        <h2>Definition</h2>
-                        <p class="fragment fade-up">Unterscheidung zwischen starker und schwacher AI</p>
-                    </section>
-                    <section data-background-color="#8BFF78">
-                        <h2>Schwache | narrow AI</h2>
-                        <aside class="notes">
-                            Alle heute existierenden Systeme fallen unter die Kategorie der schwachen KI.
-                            Funktionieren auf oberflächlichen Intelligenz-Level und erlangen kein tieferes Verständnis
-                            für die Problemlösung.
-                            Schwache künstliche Intelligenz ist vor allem auf die Erfüllung klar definierter Aufgaben
-                            ausgerichtet und variiert die Herangehensweise an Probleme nicht.
-                            Stattdessen greift die schwache künstliche Intelligenz auf Methoden zurück, die ihr für die
-                            Problemlösung zur Verfügung gestellt werden.
-                        </aside>
-                    </section>
-                    <section data-background-color="#FF3660">
-                        <h2>Starke | general AI</h2>
-                        <img src="assets/strongAI.png" alt="No image found">
-                        <aside class="notes">
-                            Eine starke künstliche Intelligenz handelt nicht mehr nur reaktiv, sondern auch aus eigenem
-                            Antrieb, intelligent und flexibel.
-                            Eine Zeitspanne von 20 bis 40 Jahren bis es eine starke AI gibt, gilt als realistisch.
-                        </aside>
-                    </section>
-                    <section data-background-color="#FF3660" data-markdown>
-                        <script type="text/template">
-                            ## Bedingungen
-                            1. Logisches Denkvermögen <!-- .element: class="fragment" -->
-                            2. Entscheidungsfähigkeit auch bei Unsicherheit <!-- .element: class="fragment" -->
-                            3. Planungs- und Lernfähigkeit <!-- .element: class="fragment" -->
-                            4. Fähigkeit zur Kommunikation in natürlicher Sprache <!-- .element: class="fragment" -->
-                            5. Kombinieren aller Fähigkeiten zur Erreichung eines übergeordneten Ziels <!-- .element: class="fragment" -->
-                        </script>
-                    </section>
-                    <section data-background-image="assets/stagesOfLife.png" data-background-size="contain">
-
-                    </section>
-                </section>
-                <section>
-                    <h2>Geschichte</h2>
-                </section>
-                <section>
-                    <section>
-                        <h2>Machine Learning</h2>
-                    </section>
-                    <section>
-                        <img src="assets/mlSkizze.png" alt="No image found">
-                        <aside class="notes">
-                            Um ML zu verstehen, habe ich hier eine kurze Skizze gemacht.
-                        </aside>
-                    </section>
-                </section>
-                <section>
-                    <h2>Anwendungen</h2>
-                </section>
-                <section>
-                    <h2>Ausblick</h2>
-                </section>
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Quellen
-                        - 27.08.2017 von
-                        Julian Moeser: https://jaai.de/starke-ki-schwache-ki-was-kann-kuenstliche-intelligenz-261/
-                    </script>
-                </section>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI Presentation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-background-image="assets/aiLogo.gif" data-background-size="30%"
+                 data-background-position="50% 0%" data-background-color="black">
+            <div style="background-color: white; color:black; margin-top: 15%;"
+                 class="fragment fade-out">
+                Anschauen unter
+                ai.reneborner.de
             </div>
-        </div>
-        <script src="js/reveal.js"></script>
-        <script>
-            Reveal.initialize({
-                dependencies: [
-                    {src: 'plugin/markdown/marked.js'},
-                    {src: 'plugin/markdown/markdown.js'},
-                    {src: 'plugin/notes/notes.js', async: true},
-                    {src: 'plugin/highlight/highlight.js', async: true}
-                ]
-            });
-        </script>
-    </body>
+            <h3 class="fragment fade-up">die größte und letzte Innovation der Menschheit?</h3>
+        </section>
+        <section>
+            <h2>Methodik</h2>
+            <p>Viele Fachbücher zur Literaturübersicht: </p>
+            <ul>
+                <li>Artificial Intelligence - A modern Approach</li>
+                <li>Life 3.0: Being Human in the Age of Artificial Intelligence</li>
+                <li>Artificial Intelligence and Machine Learning for Business: A No-Nonsense Guide to Data Driven
+                    Technologies
+                </li>
+            </ul>
+            <aside class="notes">
+                Noch kurz ein paar Informationen zu meiner Methodik
+            </aside>
+        </section>
+        <section data-markdown>
+            <!-- @formatter:off -->
+            <script type="text/template">
+                ## Agenda
+                - Definitionen <!-- .element: class="fragment" -->
+                - Geschichte <!-- .element: class="fragment" -->
+                - Machine Learning <!-- .element: class="fragment" -->
+                    - Lern Algorithmen <!-- .element: class="fragment" -->
+                        - supervised learning
+                        - unsupervised learning
+                        - reinforcement learning
+                    - Modelle <!-- .element: class="fragment" -->
+                        - Bayessches Netz
+                        - Neuronales Netz & Deep learning
+                - Anwendungen <!-- .element: class="fragment" -->
+                - Zukunft <!-- .element: class="fragment" -->
+                - Fazit <!-- .element: class="fragment" -->
+            </script>
+            <!-- @formatter:on -->
+        </section>
+        <section>
+            <section>
+                <h2>Definition</h2>
+                <p class="fragment fade-up">Unterscheidung zwischen starker und schwacher AI</p>
+            </section>
+            <section data-background-color="#8BFF78">
+                <h2>Schwache | narrow AI</h2>
+                <aside class="notes">
+                    Alle heute existierenden Systeme fallen unter die Kategorie der schwachen KI.
+                    Funktionieren auf oberflächlichen Intelligenz-Level und erlangen kein tieferes Verständnis
+                    für die Problemlösung.
+                    Schwache künstliche Intelligenz ist vor allem auf die Erfüllung klar definierter Aufgaben
+                    ausgerichtet und variiert die Herangehensweise an Probleme nicht.
+                    Stattdessen greift die schwache künstliche Intelligenz auf Methoden zurück, die ihr für die
+                    Problemlösung zur Verfügung gestellt werden.
+                </aside>
+            </section>
+            <section data-background-color="#FF3660">
+                <h2>Starke | general AI</h2>
+                <img src="assets/strongAI.png" alt="No image found">
+                <aside class="notes">
+                    Eine starke künstliche Intelligenz handelt nicht mehr nur reaktiv, sondern auch aus eigenem
+                    Antrieb, intelligent und flexibel.
+                    Eine Zeitspanne von 20 bis 40 Jahren bis es eine starke AI gibt, gilt als realistisch.
+                    Eine Artificial General AI (AGI) wurde von Shane Legg, Mark Gubrud und Ben Goertzel als künstliche
+                    Intelligenz auf menschlichem Level definiert.
+                </aside>
+            </section>
+            <section data-background-color="#FF3660" data-markdown>
+                <script type="text/template">
+                    ## Bedingungen für eine general AI
+                    1. Logisches Denkvermögen <!-- .element: class="fragment" -->
+                    2. Entscheidungsfähigkeit auch bei Unsicherheit <!-- .element: class="fragment" -->
+                    3. Planungs- und Lernfähigkeit <!-- .element: class="fragment" -->
+                    4. Fähigkeit zur Kommunikation in natürlicher Sprache <!-- .element: class="fragment" -->
+                    5. Kombinieren aller Fähigkeiten zur Erreichung eines übergeordneten Ziels <!-- .element: class="fragment" -->
+                </script>
+            </section>
+            <section data-background-image="assets/stagesOfLife.png" data-background-size="contain">
+            </section>
+        </section>
+        <section>
+            <h2>Geschichte</h2>
+            <!-- AI - A modern approach ab S.16-->
+        </section>
+        <section>
+            <section>
+                <h2>Machine Learning</h2>
+            </section>
+            <section>
+                <img src="assets/mlSkizze.png" alt="No image found">
+            </section>
+            <section>
+                <h2>Lern Algorithmen</h2>
+            </section>
+            <section>
+                <h2>supervised learning</h2>
+            </section>
+            <section>
+                <h2>unsupervised learning</h2>
+            </section>
+            <section>
+                <h2>reinforcement learning</h2>
+            </section>
+            <section>
+                <h2>Modelle</h2>
+            </section>
+            <section>
+                <h2>Bayessches Netz</h2>
+            </section>
+            <section>
+                <h2>Neuronales Netz & deep learning</h2>
+                <!--
+                framework for many different machine learning algorithms to work together and process complex data inputs</p>
+                -->
+            </section>
+        </section>
+        <section>
+            <h2>Anwendungen</h2>
+        </section>
+        <section>
+            <section>
+                <h2>Ausblick</h2>
+            </section>
+            <section data-background-image="assets/landscape-of-human-competence.png" data-background-size="contain">
+                <aside class="notes">
+                    "We feel safe on our peaks, but, at the present rate those too will be submerged within another half
+                    century. I propose that we build Arks as that day nears, and adopt a seafaring life!" - Hans Moravec
+                </aside>
+            </section>
+        </section>
+        <section>
+            <h2>Literaturverzeichnis</h2>
+            <ul>
+                <li>27.08.2017 von
+                    Julian Moeser: https://jaai.de/starke-ki-schwache-ki-was-kann-kuenstliche-intelligenz-261/
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+<script src="js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {src: 'plugin/highlight/highlight.js', async: true}
+        ]
+    });
+</script>
+</body>
 </html>
