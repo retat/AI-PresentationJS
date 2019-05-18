@@ -1,233 +1,266 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AI Presentation</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css">
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
-</head>
-<body>
-<div class="reveal">
-    <div class="slides">
-        <section data-background-image="assets/aiLogo.gif" data-background-size="30%"
-                 data-background-position="50% 0%" data-background-color="black">
-            <div style="background-color: white; color:black; margin-top: 15%;"
-                 class="fragment fade-out">
-                Anschauen unter
-                ai.reneborner.de
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>AI Presentation</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background-image="assets/aiLogo.gif" data-background-size="30%"
+                         data-background-position="50% 0%" data-background-color="black">
+                    <div style="background-color: white; color:black; margin-top: 15%;"
+                         class="fragment fade-out">
+                        Anschauen unter
+                        ai.reneborner.de
+                    </div>
+                    <h3 class="fragment fade-up">die größte und letzte Innovation der Menschheit?</h3>
+                </section>
+                <section>
+                    <h2>Methodik</h2>
+                    <p>Viele Fachbücher zur Literaturübersicht: </p>
+                    <ul>
+                        <li>Artificial Intelligence - A modern Approach</li>
+                        <li>Life 3.0: Being Human in the Age of Artificial Intelligence</li>
+                        <li>Artificial Intelligence and Machine Learning for Business: A No-Nonsense Guide to Data
+                            Driven
+                            Technologies
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        Noch kurz ein paar Informationen zu meiner Methodik.
+                        Zur Vorrecherche habe ich viel das Internet und Wikipedia genutzt. Gerade zu dem Thema AI gibt
+                        es viele
+                        sehr gute Informationen und Blogs im Internet.
+                    </aside>
+                </section>
+                <section data-markdown>
+                    <!-- @formatter:off -->
+                    <script type="text/template">
+                        ## Agenda
+                        - Definitionen <!-- .element: class="fragment" -->
+                        - Geschichte <!-- .element: class="fragment" -->
+                        - Machine Learning <!-- .element: class="fragment" -->
+                        - Lern Algorithmen <!-- .element: class="fragment" -->
+                        - Modelle <!-- .element: class="fragment" -->
+                        - Anwendungen <!-- .element: class="fragment" -->
+                        - Zukunft <!-- .element: class="fragment" -->
+                        - Fazit <!-- .element: class="fragment" -->
+                    </script>
+                    <!-- @formatter:on -->
+                </section>
+                <section>
+                    <section>
+                        <h2>Definition</h2>
+                        <p class="fragment fade-up">Unterscheidung zwischen starker und schwacher AI</p>
+                    </section>
+                    <section data-background-color="#8BFF78">
+                        <h2>Schwache | narrow AI</h2>
+                        <img src="assets/weakAI.png" alt="No image found">
+                        <aside class="notes">
+                            Alle heute existierenden Systeme fallen unter die Kategorie der schwachen KI.
+                            Funktionieren auf oberflächlichen Intelligenz-Level und erlangen kein tieferes Verständnis
+                            für die Problemlösung.
+                            Schwache künstliche Intelligenz ist vor allem auf die Erfüllung klar definierter Aufgaben
+                            ausgerichtet und variiert die Herangehensweise an Probleme nicht.
+                            Stattdessen greift die schwache künstliche Intelligenz auf Methoden zurück, die ihr für die
+                            Problemlösung zur Verfügung gestellt werden.
+                        </aside>
+                    </section>
+                    <section data-background-color="#FF3660">
+                        <h2>Starke | general AI</h2>
+                        <img src="assets/strongAI.png" alt="No image found">
+                        <aside class="notes">
+                            Eine starke künstliche Intelligenz handelt nicht mehr nur reaktiv, sondern auch aus eigenem
+                            Antrieb, intelligent und flexibel.
+                            Eine Zeitspanne von 20 bis 40 Jahren bis es eine starke AI gibt, gilt als realistisch.
+                            Eine Artificial General AI (AGI) wurde von Shane Legg, Mark Gubrud und Ben Goertzel als
+                            künstliche
+                            Intelligenz auf menschlichem Level definiert.
+                        </aside>
+                    </section>
+                    <section data-background-color="#FF3660" data-markdown>
+                        <script type="text/template">
+                            ## Bedingungen für eine general AI
+                            1. Logisches Denkvermögen <!-- .element: class="fragment" -->
+                            2. Entscheidungsfähigkeit auch bei Unsicherheit <!-- .element: class="fragment" -->
+                            3. Planungs- und Lernfähigkeit <!-- .element: class="fragment" -->
+                            4. Fähigkeit zur Kommunikation in natürlicher Sprache <!-- .element: class="fragment" -->
+                            5. Kombinieren aller Fähigkeiten zur Erreichung eines übergeordneten Ziels <!-- .element: class="fragment" -->
+                        </script>
+                    </section>
+                    <section data-background-image="assets/stagesOfLife.png" data-background-size="contain">
+                        <aside class="notes">
+                            Eine andere Möglichkeit der Einteilung ist das Leben 3.0. In dem gleichnamigen Buch von Max
+                            Tegmark
+                            beschreibt dieser die Aufteilung jeder Lebensform in die 3 Kategorien Überleben,
+                            Lernfähigkeit und
+                            körperliche Anpassung.
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Geschichte</h2>
+                        <!-- AI - A modern approach ab S.16-->
+                    </section>
+                    <section data-background-image="assets/historyOfAI.png" data-background-size="contain">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Machine Learning</h2>
+                    </section>
+                    <section>
+                        <img src="assets/mlSkizze.png" alt="No image found">
+                    </section>
+                    <section>
+                        <h2>Lern Algorithmen</h2>
+                        <!-- S. 695 in AI - A general Approach -->
+                    </section>
+                    <section>
+                        <h2>supervised learning</h2>
+                        <img src="assets/supervisedLearning.png" alt="No image found">
+                        <!--
+                        https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
+                        -->
+                        <aside class="notes">
+                            - der meist verwendete Algorithmus bei der Mehrheit der praktischen ML Anwendungen <br>
+                            -
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>unsupervised learning</h2>
+                        <img src="assets/unsupervisedLearning.png" alt="No image found">
+                        <!--
+                        https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
+                        -->
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>reinforcement learning</h2>
+                        <img src="assets/reinforcementLearning.png" alt="No image found">
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Modelle</h2>
+                    </section>
+                    <section>
+                        <h2>Bayessches Netz</h2>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Neuronale Netze & deep learning</h2>
+                        <aside class="notes">
+                        </aside>
+                        <!--
+                        framework for many different machine learning algorithms to work together and process complex data inputs</p>
+                        -->
+                    </section>
+                    <!--
+                    Genetische Algorithmen?
+                    -->
+                </section>
+                <section>
+                    <section>
+                        <h2>Anwendungen</h2>
+                        <aside class="notes">
+                            So gut wie in allen Bereichen anwendbar, im Folgenden ein paar Beispiele
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Raumfahrt</h2>
+                    </section>
+                    <section>
+                        <h2>Finanzen</h2>
+                    </section>
+                    <section>
+                        <h2>Produktion</h2>
+                    </section>
+                    <section>
+                        <h2>Transport</h2>
+                    </section>
+                    <section>
+                        <h2>Energie</h2>
+                    </section>
+                    <section>
+                        <h2>Gesundheitswesen</h2>
+                    </section>
+                    <section>
+                        <h2>Kommunikation</h2>
+                    </section>
+                    <section>
+                        <h2>Justiz</h2>
+                    </section>
+                    <section>
+                        <h2>Militär</h2>
+                    </section>
+                    <!--
+                    Life 3.0 ab Position 1602 / Bugs vs. Robust AI
+                    -->
+                </section>
+                <section>
+                    <section>
+                        <h2>Zukunft</h2>
+                        <!--
+                        Life 3.0 ab Position 2024 / Jobs and Wages
+                        -->
+                    </section>
+                    <section data-background-image="assets/landscape-of-human-competence.png"
+                             data-background-size="contain">
+                        <aside class="notes">
+                            "We feel safe on our peaks, but, at the present rate those too will be submerged within
+                            another half
+                            century. I propose that we build Arks as that day nears, and adopt a seafaring life!" - Hans
+                            Moravec
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <h2>Fazit</h2Y>
+                </section>
+                <section>
+                    <h2>Literaturverzeichnis</h2>
+                    <ul>
+                        <li>27.08.2017 von
+                            Julian Moeser: https://jaai.de/starke-ki-schwache-ki-was-kann-kuenstliche-intelligenz-261/
+                        </li>
+                        <li>
+                            https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
+                        </li>
+                    </ul>
+                </section>
             </div>
-            <h3 class="fragment fade-up">die größte und letzte Innovation der Menschheit?</h3>
-        </section>
-        <section>
-            <h2>Methodik</h2>
-            <p>Viele Fachbücher zur Literaturübersicht: </p>
-            <ul>
-                <li>Artificial Intelligence - A modern Approach</li>
-                <li>Life 3.0: Being Human in the Age of Artificial Intelligence</li>
-                <li>Artificial Intelligence and Machine Learning for Business: A No-Nonsense Guide to Data Driven
-                    Technologies
-                </li>
-            </ul>
-            <aside class="notes">
-                Noch kurz ein paar Informationen zu meiner Methodik.
-                Zur Vorrecherche habe ich viel das Internet und Wikipedia genutzt. Gerade zu dem Thema AI gibt es viele
-                sehr gute Informationen und Blogs im Internet.
-            </aside>
-        </section>
-        <section data-markdown>
-            <!-- @formatter:off -->
-            <script type="text/template">
-                ## Agenda
-                - Definitionen <!-- .element: class="fragment" -->
-                - Geschichte <!-- .element: class="fragment" -->
-                - Machine Learning <!-- .element: class="fragment" -->
-                    - Lern Algorithmen <!-- .element: class="fragment" -->
-                    - Modelle <!-- .element: class="fragment" -->
-                - Anwendungen <!-- .element: class="fragment" -->
-                - Zukunft <!-- .element: class="fragment" -->
-                - Fazit <!-- .element: class="fragment" -->
-            </script>
-            <!-- @formatter:on -->
-        </section>
-        <section>
-            <section>
-                <h2>Definition</h2>
-                <p class="fragment fade-up">Unterscheidung zwischen starker und schwacher AI</p>
-            </section>
-            <section data-background-color="#8BFF78">
-                <h2>Schwache | narrow AI</h2>
-                <img src="assets/weakAI.png" alt="No image found">
-                <aside class="notes">
-                    Alle heute existierenden Systeme fallen unter die Kategorie der schwachen KI.
-                    Funktionieren auf oberflächlichen Intelligenz-Level und erlangen kein tieferes Verständnis
-                    für die Problemlösung.
-                    Schwache künstliche Intelligenz ist vor allem auf die Erfüllung klar definierter Aufgaben
-                    ausgerichtet und variiert die Herangehensweise an Probleme nicht.
-                    Stattdessen greift die schwache künstliche Intelligenz auf Methoden zurück, die ihr für die
-                    Problemlösung zur Verfügung gestellt werden.
-                </aside>
-            </section>
-            <section data-background-color="#FF3660">
-                <h2>Starke | general AI</h2>
-                <img src="assets/strongAI.png" alt="No image found">
-                <aside class="notes">
-                    Eine starke künstliche Intelligenz handelt nicht mehr nur reaktiv, sondern auch aus eigenem
-                    Antrieb, intelligent und flexibel.
-                    Eine Zeitspanne von 20 bis 40 Jahren bis es eine starke AI gibt, gilt als realistisch.
-                    Eine Artificial General AI (AGI) wurde von Shane Legg, Mark Gubrud und Ben Goertzel als künstliche
-                    Intelligenz auf menschlichem Level definiert.
-                </aside>
-            </section>
-            <section data-background-color="#FF3660" data-markdown>
-                <script type="text/template">
-                    ## Bedingungen für eine general AI
-                    1. Logisches Denkvermögen <!-- .element: class="fragment" -->
-                    2. Entscheidungsfähigkeit auch bei Unsicherheit <!-- .element: class="fragment" -->
-                    3. Planungs- und Lernfähigkeit <!-- .element: class="fragment" -->
-                    4. Fähigkeit zur Kommunikation in natürlicher Sprache <!-- .element: class="fragment" -->
-                    5. Kombinieren aller Fähigkeiten zur Erreichung eines übergeordneten Ziels <!-- .element: class="fragment" -->
-                </script>
-            </section>
-            <section data-background-image="assets/stagesOfLife.png" data-background-size="contain">
-                <aside class="notes">
-                    Eine andere Möglichkeit der Einteilung ist das Leben 3.0. In dem gleichnamigen Buch von Max Tegmark
-                    beschreibt dieser die Aufteilung jeder Lebensform in die 3 Kategorien Überleben, Lernfähigkeit und
-                    körperliche Anpassung.
-                </aside>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>Geschichte</h2>
-                <!-- AI - A modern approach ab S.16-->
-            </section>
-            <section data-background-image="assets/historyOfAI.png" data-background-size="contain">
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>Machine Learning</h2>
-            </section>
-            <section>
-                <img src="assets/mlSkizze.png" alt="No image found">
-            </section>
-            <section>
-                <h2>Lern Algorithmen</h2>
-                <!-- S. 695 in AI - A general Approach -->
-            </section>
-            <section>
-                <h2>supervised learning</h2>
-                <img src="assets/supervisedLearning.png" alt="No image found">
-                <!--
-                Todo Zeichnung schon fertig
-                https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
-                -->
-                <aside class="notes">
-                    - der meist verwendete Algorithmus bei der Mehrheit der praktischen ML Anwendungen <br>
-                    -
-                    
-                </aside>
-            </section>
-            <section>
-                <h2>unsupervised learning</h2>
-                <img src="assets/unsupervisedLearning.png" alt="No image found">
-                <!--
-                Todo Zeichnung schon fertig
-                https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
-                -->
-                <aside class="notes">
-    
-                </aside>
-            </section>
-            <section>
-                <h2>reinforcement learning</h2>
-                <img src="assets/reinforcementLearning.png" alt="No image found">
-                <aside class="notes">
-    
-                </aside>
-            </section>
-            <section>
-                <h2>Modelle</h2>
-            </section>
-            <section>
-                <h2>Bayessches Netz</h2>
-                <aside class="notes">
-    
-                </aside>
-            </section>
-            <section>
-                <h2>Neuronale Netze & deep learning</h2>
-                <aside class="notes">
-    
-                </aside>
-                <!--
-                framework for many different machine learning algorithms to work together and process complex data inputs</p>
-                -->
-            </section>
-            <!--
-            Genetische Algorithmen?
-            -->
-        </section>
-        <section>
-            <h2>Anwendungen</h2>
-            <!--
-            Life 3.0 ab Position 1602 / Bugs vs. Robust AI
-            -->
-        </section>
-        <section>
-            <section>
-                <h2>Zukunft</h2>
-                <!--
-                Life 3.0 ab Position 2024 / Jobs and Wages
-                -->
-            </section>
-            <section data-background-image="assets/landscape-of-human-competence.png" data-background-size="contain">
-                <aside class="notes">
-                    "We feel safe on our peaks, but, at the present rate those too will be submerged within another half
-                    century. I propose that we build Arks as that day nears, and adopt a seafaring life!" - Hans Moravec
-                </aside>
-            </section>
-        </section>
-        <section>
-            <h2>Fazit</h2Y>
-        </section>
-        <section>
-            <h2>Literaturverzeichnis</h2>
-            <ul>
-                <li>27.08.2017 von
-                    Julian Moeser: https://jaai.de/starke-ki-schwache-ki-was-kann-kuenstliche-intelligenz-261/
-                </li>
-                <li>
-                    https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
-                </li>
-            </ul>
-        </section>
-    </div>
-</div>
-<script src="js/reveal.js"></script>
-<script>
-    Reveal.initialize({
-        controls: false,
-        slideNumber: true,
-        dependencies: [
-            {src: 'plugin/markdown/marked.js'},
-            {src: 'plugin/markdown/markdown.js'},
-            {src: 'plugin/notes/notes.js', async: true},
-            {src: 'plugin/highlight/highlight.js', async: true}
-        ]
-    });
-</script>
-</body>
+        </div>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                controls: false,
+                slideNumber: true,
+                dependencies: [
+                    {src: 'plugin/markdown/marked.js'},
+                    {src: 'plugin/markdown/markdown.js'},
+                    {src: 'plugin/notes/notes.js', async: true},
+                    {src: 'plugin/highlight/highlight.js', async: true}
+                ]
+            });
+        </script>
+    </body>
 </html>
