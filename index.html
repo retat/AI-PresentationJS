@@ -157,6 +157,8 @@
                         https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
                         -->
                         <aside class="notes">
+                            Eine Art von Unsupervised Learning ist die Hebbsche Lernregel (Hebbian Theory) <br>
+                            Dazu komme ich dann später bei neuronalen Netzwerken nochmal.
                         </aside>
                     </section>
                     <section>
@@ -174,16 +176,59 @@
                         </aside>
                     </section>
                     <section>
-                        <h2>Neuronale Netze & deep learning</h2>
+                        <h2> Künstliche Neuronale Netze & deep learning</h2>
                         <aside class="notes">
+                            Hebb formulierte 1949 in seinem Buch The Organization of Behavior: „Wenn ein Axon der
+                            Zelle
+                            A […] Zelle B erregt und wiederholt und dauerhaft zur Erzeugung von Aktionspotentialen
+                            in
+                            Zelle B beiträgt, so resultiert dies in Wachstumsprozessen oder metabolischen
+                            Veränderungen
+                            in einer oder in beiden Zellen, die bewirken, dass die Effizienz von Zelle A in Bezug
+                            auf
+                            die Erzeugung eines Aktionspotentials in B größer wird.“ <br>
+                            Das bedeutet: Je häufiger ein Neuron A gleichzeitig mit Neuron B aktiv ist, umso
+                            bevorzugter
+                            werden die beiden Neuronen aufeinander reagieren („what fires together, wires
+                            together“).
+                            Dies hat Hebb anhand von Veränderungen der synaptischen Übertragung zwischen Neuronen
+                            nachgewiesen.
+                            Nach diesem Prinzip werden noch heute neuronale Netzwerke aufgebaut.
                         </aside>
                         <!--
                         framework for many different machine learning algorithms to work together and process complex data inputs</p>
                         -->
                     </section>
-                    <!--
-                    Genetische Algorithmen?
-                    -->
+                    <section data-background-image="assets/neuronalNetwork1.png" data-background-size="contain">
+                        <aside class="notes">
+                            Hier ein Beispiel von einem einfachem künstlichen neuronalen Netz für die Bilderkennung
+                            <br>
+                            Neuronen nehmen immer einen Wert zwischen 0 und 1 an. In der ersten Ebene bildet jedes
+                            Neuron die Helligkeit von einem Pixel ab. Jedes Neuron gibt dann Informationen an jedes
+                            Neuron aus der nächsten Ebene weiter.
+                        </aside>
+                    </section>
+                    <section data-background-image="assets/neuronalNetwork2.png" data-background-size="contain">
+                        <aside class="notes">
+                            Die Verbindungen zwischen Neuronen sind gewichtet, und bestimmen den Einfluss, den ein
+                            Neuron auf ein anderes Neuron hat. Die Gewichtung wird während dem Lernprozess
+                            angepasst.<br>
+                            Mit der Sigmoidfunktion wird der Wert der Neuronen auf der nächsten Ebene berechnet. Hier
+                            wird immer die Gewichtung mit dem Wert des Neutrons multipliziert (hier Helligkeit) und
+                            am Ende noch ein bias, also ein Schwellwert, abgezogen. Die Sigmoidfunktion generiert
+                            dann einen Wert zwischen 0 und 1.
+                        </aside>
+                    </section>
+                    <section data-background-image="assets/neuronalNetwork3.png" data-background-size="contain">
+                        <aside class="notes">
+                            In den Hidden Layers werden immer mehr details gefiltert, bis am Ende eine Aussage über
+                            das Bild gemacht werden kann.
+                        </aside>
+                    </section>
+                </section>
+                <!--
+                Genetische Algorithmen?
+                -->
                 </section>
                 <section>
                     <section>
