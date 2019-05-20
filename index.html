@@ -171,13 +171,53 @@
                     <section>
                         <h2>Modelle</h2>
                     </section>
-                    <section>
-                        <h2>Bayessches Netz</h2>
+                    <section data-background-image="assets/montyHall1.png" data-background-size="contain">
+                        <aside class="notes">
+                            Als Einstieg das Monty Hall Problem <br>
+                            hinter 2 Türen ist eine Ziege, hinter der anderen ein Sportauto <br>
+                            Die Wahrscheinlichkeit das Sportauto zu treffen ist logischerweise 1/3, von daher spielt
+                            es keine Rolle welche Tür wir wählen.
+                        </aside>
+                    </section>
+                    <section data-background-image="assets/montyHall2.png" data-background-size="contain">
+                        <aside class="notes">
+                            Nach der Wahl öffnet der Moderator eine Tür hinter der eine Ziege ist.
+                            Wechselt ihr nun die Tür oder nicht? -> Wer hat einen Vorschlag / Begründung?
+                        </aside>
+                    </section>
+                    <section data-background-image="assets/montyHall3.png" data-background-size="contain">
                         <aside class="notes">
                         </aside>
                     </section>
+                    <section data-background-image="assets/montyHall4.png" data-background-size="contain">
+                        <aside class="notes">
+                            Richtig ist es zu wechseln, da ursprünglich die kum. Wahrscheinlichkeit 2/3 war, dass
+                            hinter einer der 2 Türen das Sportauto ist, und wir nun sagen können, dass die
+                            Wahrscheinlichkeit 2/3 ist, dass das Sportauto hinter der anderen Türe ist.
+                        </aside>
+                    </section>
                     <section>
-                        <h2> Künstliche Neuronale Netze & deep learning</h2>
+                        <h2>Satz von Bayes</h2>
+                        <img class="fragment fade-in" src="assets/montyHallBayes.png" alt="No image found">
+                        <aside class="notes">
+                            Eine andere Art das Monty Hall Problem zu lösen ist mit dem Satz von Bayes, das sähe dann
+                            so aus, das erspare ich euch jetzt aber.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Bayessches Netz</h2>
+                        <img src="assets/bayesianNetwork.png" alt="No image found">
+                        <aside class="notes">
+                            Ein Bayesian Network, auch bayessches Netz oder gerichteter azyklischer Graph, bezeichnet
+                            ein probabilistisches grafisches Modell, das eine Reihe zufälliger
+                            Variablen und ihre bedingten Abhängigkeiten über einen gerichteten azyklischen Graph (DAG)
+                            darstellt. Ein bayessches Netz könnte beispielsweise die wahrscheinlichen Beziehungen
+                            zwischen Krankheiten und Symptomen darstellen. Diese Netze können auch trainiert werden
+                            und für vorhersagen etc. genutzt werden.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2> Künstliche Neuronale Netze & Deep learning</h2>
                         <aside class="notes">
                             Hebb formulierte 1949 in seinem Buch The Organization of Behavior: „Wenn ein Axon der
                             Zelle
@@ -205,6 +245,7 @@
                     <section data-background-image="assets/neuronalNetwork1.png" data-background-size="contain">
                         <aside class="notes">
                             Hier ein Beispiel von einem einfachem künstlichen neuronalen Netz für die Bilderkennung
+                            ("Hello World" Anwendung der neuronalen Netze)
                             <br>
                             Neuronen nehmen immer einen Wert zwischen 0 und 1 an. In der ersten Ebene bildet jedes
                             Neuron die Helligkeit von einem Pixel ab. Jedes Neuron gibt dann Informationen an jedes
@@ -214,12 +255,15 @@
                     <section data-background-image="assets/neuronalNetwork2.png" data-background-size="contain">
                         <aside class="notes">
                             Die Verbindungen zwischen Neuronen sind gewichtet, und bestimmen den Einfluss, den ein
-                            Neuron auf ein anderes Neuron hat. Die Gewichtung wird während dem Lernprozess
-                            angepasst.<br>
+                            Neuron auf ein anderes Neuron hat.<br>
                             Mit der Sigmoidfunktion wird der Wert der Neuronen auf der nächsten Ebene berechnet. Hier
-                            wird immer die Gewichtung mit dem Wert des Neutrons multipliziert (hier Helligkeit) und
+                            wird immer die Gewichtung mit dem Wert des Neurons multipliziert und
                             am Ende noch ein bias, also ein Schwellwert, abgezogen. Die Sigmoidfunktion generiert
-                            dann einen Wert zwischen 0 und 1.
+                            dann einen Wert zwischen 0 und 1.<br>
+                            Die Gewichtung und der Schwellwert wird während dem Lernprozess angepasst und bestimmen
+                            wie trainiert und effizient ein neuronales Netz ist. Zum Start eines Lernprozesses sind
+                            die Werte komplett zufällig gewählt und werden dann je nach Ergebnis angepasst
+                            (Fehlerrückführung | Backpropagation).
                         </aside>
                     </section>
                     <section data-background-image="assets/neuronalNetwork3.png" data-background-size="contain">
