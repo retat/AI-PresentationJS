@@ -29,7 +29,7 @@
                         Anschauen unter
                         ai.reneborner.de
                     </div>
-                    <h3 class="fragment fade-up">die größte und letzte Innovation der Menschheit?</h3>
+                    <h3 class="fragment fade-up">Artificial Intelligence</h3>
                 </section>
                 <section data-background-image="assets/bookCovers.png" data-background-size="contain">
                     <h2>Methodik</h2>
@@ -133,14 +133,26 @@
                         <h2 class="top">Die Geburt von AI</h2>
                         <aside class="notes">
                             - Turing Test: "Wenn eine Maschine ein Gespräch mit einem Mensch führen kann und dieser
-                            nicht unterscheiden kann, ob er mit einem Mensch oder mit einer Maschine spricht, dann denkt
-                            eine Maschine" <br>
+                            nicht unterscheiden kann, ob er mit einem Mensch oder mit einer Maschine spricht, ist der
+                            Turing Test bestanden" (komme ich gleich nochmal zu) <br>
                             - Logic Theorist: entwickelt, um Probleme wie Menschen lösen zu können. Hat 38 von 52
                             mathematischen Theorien bewiesen aus dem Buch Principia Mathematica mit teilweise
                             eleganteren Beweisen. <br>
                             - Dartmouth Conference: Beschluss für den Namen "Artificial Intelligence" für das
                             Forschungsgebiet. Logic Theorist wurde vorgestellt und viele wichtige Teilnehmer waren
                             anwesend -> Geburt von AI <br>
+                        </aside>
+                    </section>
+                    <section data-background-image="assets/historyTuring.png"
+                             data-background-size="contain">
+                        <aside class="notes">
+                            - um den Touring test zu bestehen benötigt ein AI System Natural Language Processing, die
+                            Möglichkeit Wissen zu speichern, die Fähigkeit Schlussfolgerungen zu ziehen und machine
+                            learning <br>
+                            - die physikalische Interaktion spielt dabei keine Rolle und ist nicht notwendig für
+                            Intelligenz
+                            - der Test ist auch heute noch relevant, auch wenn eher die dahinterliegenden Prinzipien
+                            erforscht werden, statt der Turing Test selber
                         </aside>
                     </section>
                     <section data-background-image="assets/historyGoldenYears.png"
@@ -266,16 +278,16 @@
                     </section>
                     <section data-background-image="assets/montyHall1.png" data-background-size="contain">
                         <aside class="notes">
-                            Als Einstieg das Monty Hall Problem <br>
-                            hinter 2 Türen ist eine Ziege, hinter der anderen ein Sportauto <br>
-                            Die Wahrscheinlichkeit das Sportauto zu treffen ist logischerweise 1/3, von daher spielt
-                            es keine Rolle welche Tür wir wählen.
+                            - Als Einstieg das Monty Hall Problem <br>
+                            - hinter 2 Türen ist eine Ziege, hinter der anderen ein Sportauto <br>
+                            - Die Wahrscheinlichkeit das Sportauto zu treffen ist logischerweise 1/3, von daher spielt
+                            es keine Rolle welche Tür wir als erstes wählen.
                         </aside>
                     </section>
                     <section data-background-image="assets/montyHall2.png" data-background-size="contain">
                         <aside class="notes">
-                            Nach der Wahl öffnet der Moderator eine Tür hinter der eine Ziege ist.
-                            Wechselt ihr nun die Tür oder nicht? -> Wer hat einen Vorschlag / Begründung?
+                            - Nach der Wahl öffnet der Moderator eine Tür hinter der eine Ziege ist.<br>
+                            - Wechselt ihr nun die Tür oder nicht? -> <b>Wer hat einen Vorschlag / Begründung?</b>
                         </aside>
                     </section>
                     <section data-background-image="assets/montyHall3.png" data-background-size="contain">
@@ -293,41 +305,30 @@
                         <h2>Satz von Bayes</h2>
                         <img class="fragment fade-in" src="assets/montyHallBayes.png" alt="No image found">
                         <aside class="notes">
-                            Eine andere Art das Monty Hall Problem zu lösen ist mit dem Satz von Bayes, das sähe dann
-                            so aus, das erspare ich euch jetzt aber.
+                            - Eine andere Art das Monty Hall Problem zu lösen ist mit dem Satz von Bayes, das sähe dann
+                            so aus, das erspare ich euch jetzt aber
                         </aside>
                     </section>
                     <section>
                         <h2>Bayessches Netz</h2>
                         <img src="assets/bayesianNetwork.png" alt="No image found">
                         <aside class="notes">
-                            Ein Bayesian Network, auch bayessches Netz oder gerichteter azyklischer Graph, bezeichnet
-                            ein probabilistisches grafisches Modell, das eine Reihe zufälliger
-                            Variablen und ihre bedingten Abhängigkeiten über einen gerichteten azyklischen Graph (DAG)
-                            darstellt. Ein bayessches Netz könnte beispielsweise die wahrscheinlichen Beziehungen
-                            zwischen Krankheiten und Symptomen darstellen. Diese Netze können auch trainiert werden
-                            und für vorhersagen etc. genutzt werden.
+                            - Ein bayessches Netz bezeichnet ein Modell, das eine Reihe zufälliger Variablen und ihre
+                            bedingten Abhängigkeiten über einen Graph darstellt. <br>
+                            - Ein bayessches Netz könnte beispielsweise die wahrscheinlichen Beziehungen zwischen
+                            Krankheiten und Symptomen darstellen. <br>
+                            - Diese Netze können auch trainiert werden und für vorhersagen etc. genutzt werden.
                         </aside>
                     </section>
-                    <section>
+                    <section data-background-image="assets/neuronalNetwork0.jpg" data-background-size="contain">
                         <h2> Künstliche Neuronale Netze & Deep learning</h2>
                         <aside class="notes">
-                            Hebb formulierte 1949 in seinem Buch The Organization of Behavior: „Wenn ein Axon der
-                            Zelle
-                            A […] Zelle B erregt und wiederholt und dauerhaft zur Erzeugung von Aktionspotentialen
-                            in
-                            Zelle B beiträgt, so resultiert dies in Wachstumsprozessen oder metabolischen
-                            Veränderungen
-                            in einer oder in beiden Zellen, die bewirken, dass die Effizienz von Zelle A in Bezug
-                            auf
-                            die Erzeugung eines Aktionspotentials in B größer wird.“ <br>
-                            Das bedeutet: Je häufiger ein Neuron A gleichzeitig mit Neuron B aktiv ist, umso
-                            bevorzugter
-                            werden die beiden Neuronen aufeinander reagieren („what fires together, wires
-                            together“).
-                            Dies hat Hebb anhand von Veränderungen der synaptischen Übertragung zwischen Neuronen
+                            - Donald Hebb formulierte 1949 in seinem Buch The Organization of Behavior: „Je häufiger ein
+                            Neuron A gleichzeitig mit Neuron B aktiv ist, umso bevorzugter werden die beiden Neuronen
+                            aufeinander reagieren" („what fires together, wires together“). <br>
+                            - Dies hat Hebb anhand von Veränderungen der synaptischen Übertragung zwischen Neuronen
                             nachgewiesen.
-                            Nach diesem Prinzip werden noch heute neuronale Netzwerke aufgebaut.
+                            - Nach diesem Prinzip werden noch heute neuronale Netzwerke aufgebaut.
                         </aside>
                         <!--
                         framework for many different machine learning algorithms to work together and process complex data inputs</p>
@@ -337,32 +338,35 @@
                     </section>
                     <section data-background-image="assets/neuronalNetwork1.png" data-background-size="contain">
                         <aside class="notes">
-                            Hier ein Beispiel von einem einfachem künstlichen neuronalen Netz für die Bilderkennung
-                            ("Hello World" Anwendung der neuronalen Netze)
-                            <br>
-                            Neuronen nehmen immer einen Wert zwischen 0 und 1 an. In der ersten Ebene bildet jedes
-                            Neuron die Helligkeit von einem Pixel ab. Jedes Neuron gibt dann Informationen an jedes
-                            Neuron aus der nächsten Ebene weiter.
+                            - Hier ein Beispiel von einem einfachem künstlichen neuronalen Netz für die Bilderkennung
+                            ("Hello World" Anwendung der neuronalen Netze) <br>
+                            - Neuronen nehmen immer einen Wert zwischen 0 und 1 an. In der ersten Ebene bildet jedes
+                            Neuron die Helligkeit von einem Pixel ab. <br>
+                            - Jedes Neuron gibt dann Informationen an jedes Neuron aus der nächsten Ebene weiter.
                         </aside>
                     </section>
                     <section data-background-image="assets/neuronalNetwork2.png" data-background-size="contain">
                         <aside class="notes">
-                            Die Verbindungen zwischen Neuronen sind gewichtet, und bestimmen den Einfluss, den ein
+                            - Die Verbindungen zwischen Neuronen sind gewichtet, und bestimmen den Einfluss, den ein
                             Neuron auf ein anderes Neuron hat.<br>
-                            Mit der Sigmoidfunktion wird der Wert der Neuronen auf der nächsten Ebene berechnet. Hier
+                            - Mit der Sigmoidfunktion wird der Wert der Neuronen auf der nächsten Ebene berechnet. Hier
                             wird immer die Gewichtung mit dem Wert des Neurons multipliziert und
                             am Ende noch ein bias, also ein Schwellwert, abgezogen. Die Sigmoidfunktion generiert
                             dann einen Wert zwischen 0 und 1.<br>
-                            Die Gewichtung und der Schwellwert wird während dem Lernprozess angepasst und bestimmen
-                            wie trainiert und effizient ein neuronales Netz ist. Zum Start eines Lernprozesses sind
-                            die Werte komplett zufällig gewählt und werden dann je nach Ergebnis angepasst
-                            (Fehlerrückführung | Backpropagation).
+                            - Die Gewichtung und der Schwellwert wird während dem Lernprozess angepasst und bestimmen
+                            wie trainiert und effizient ein neuronales Netz ist.<br>
+                            - Zum Start eines Lernprozesses sind die Werte komplett zufällig gewählt und werden dann je
+                            nach Ergebnis angepasst (Fehlerrückführung | Backpropagation).
                         </aside>
                     </section>
                     <section data-background-image="assets/neuronalNetwork3.png" data-background-size="contain">
                         <aside class="notes">
-                            In den Hidden Layers werden immer mehr details gefiltert, bis am Ende eine Aussage über
-                            das Bild gemacht werden kann.
+                            - In den Hidden Layers werden immer mehr details gefiltert, bis am Ende eine Aussage über
+                            das Bild gemacht werden kann.<br>
+                            - Bei vielen Hidden Layers bezeichnet man ein neuronales Netzwerk als Deep Learning
+                            Netzwerk<br>
+                            - diese komplexen neuronalen Netzwerke werden für Spracherkennung, Bilderkennung, Natural
+                            Language Processing und Empfehlungssystemen (Amazon) genutzt.
                         </aside>
                     </section>
                 </section>
@@ -589,7 +593,8 @@
                         <li class="fragment">Unterscheidung zwischen Narrow AI und AGI</li>
                         <li class="fragment">Thema AI gibt es schon seit 1950ern</li>
                         <li class="fragment">Machine Learning gibt je nach Input durch trainierte Netzwerke einen Output
-                                            zurück</li>
+                                             zurück
+                        </li>
                         <li class="fragment">AI hat sehr viele Anwendungsgebiete</li>
                         <li class="fragment">In der Zukunft wird Arbeit und Gehalt das Hauptproblem sein</li>
                     </ul>
