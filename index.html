@@ -246,12 +246,15 @@
                     </section>
                     <section>
                         <h2>supervised learning</h2>
-                        <img src="assets/supervisedLearning.png" alt="No image found">
+                        <img src="assets/supervisedLearning_new.png" alt="No image found">
                         <!--
                         https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
                         -->
                         <aside class="notes">
                             - der meist verwendete Algorithmus bei der Mehrheit der praktischen ML Anwendungen <br>
+                            - für jedes Input Beispiel wird der Output durch den Supervisor festgelegt <br>
+                            - aufgrund diesem Wissen wird dann ein Modell aufgestellt und trainiert <br>
+                            - neuronale Netzwerke werden i.d.R. mit supervised learning trainiert <br>
                         </aside>
                     </section>
                     <section>
@@ -261,14 +264,23 @@
                         https://medium.com/@gowthamy/machine-learning-supervised-learning-vs-unsupervised-learning-f1658e12a780
                         -->
                         <aside class="notes">
-                            Eine Art von Unsupervised Learning ist die Hebbsche Lernregel (Hebbian Theory) <br>
-                            Dazu komme ich dann später bei neuronalen Netzwerken nochmal.
+                            - bei der Interpretation wird ein Muster in den Daten gesucht (hier sehen immer 2 Input
+                            Bilder ähnlich aus) <br>
+                            - so können Cluster erstellt und Anomalien entdeckt werden <br>
+                            - Eine Art von Unsupervised Learning ist die Hebbsche Lernregel (Hebbian Theory),
+                            Dazu komme ich dann später bei neuronalen Netzwerken nochmal.<br>
                         </aside>
                     </section>
                     <section>
                         <h2>reinforcement learning</h2>
-                        <img src="assets/reinforcementLearning.png" alt="No image found">
+                        <img src="assets/reinforcementLearning_new.png" alt="No image found">
                         <aside class="notes">
+                            - Funktioniert nur wenn es eine Art Belohnung oder Feedback gibt, diese wird dann
+                            maximiert, z. B. in Spielen ein Punkte zähler <br>
+                            - der Agent achtet auf dieses Feedback und optimiert das Modell darauf <br>
+                            - reinforcement learning wird oft in komplizierten Umgebungen eingesetzt <br>
+                            - Google DeepMind hat z. B. Anfang 2019 einen professionellen Starcraft 2 Spieler mit
+                            einer AI, die durch reinforcement Training gelernt hat, besiegt <br>
                         </aside>
                     </section>
                     <section>
@@ -279,7 +291,7 @@
                             - Als Einstieg das Monty Hall Problem <br>
                             - hinter 2 Türen ist eine Ziege, hinter der anderen ein Sportauto <br>
                             - Die Wahrscheinlichkeit das Sportauto zu treffen ist logischerweise 1/3, von daher spielt
-                            es keine Rolle welche Tür wir als erstes wählen.
+                            es keine Rolle welche Tür wir als erstes wählen. <br>
                         </aside>
                     </section>
                     <section data-background-image="assets/montyHall2.png" data-background-size="contain">
@@ -296,7 +308,7 @@
                         <aside class="notes">
                             - Richtig ist es zu wechseln, da ursprünglich die kum. Wahrscheinlichkeit 2/3 war, dass
                             hinter einer der 2 Türen das Sportauto ist, und wir nun sagen können, dass die
-                            Wahrscheinlichkeit 2/3 ist, dass das Sportauto hinter der anderen Türe ist.
+                            Wahrscheinlichkeit 2/3 ist, dass das Sportauto hinter der anderen Türe ist. <br>
                         </aside>
                     </section>
                     <section>
@@ -304,7 +316,7 @@
                         <img class="fragment fade-in" src="assets/montyHallBayes.png" alt="No image found">
                         <aside class="notes">
                             - Eine andere Art das Monty Hall Problem zu lösen ist mit dem Satz von Bayes, das sähe dann
-                            so aus, das erspare ich euch jetzt aber
+                            so aus, das erspare ich euch jetzt aber <br>
                         </aside>
                     </section>
                     <section>
@@ -315,7 +327,7 @@
                             bedingten Abhängigkeiten über einen Graph darstellt. <br>
                             - Ein bayessches Netz könnte beispielsweise die wahrscheinlichen Beziehungen zwischen
                             Krankheiten und Symptomen darstellen. <br>
-                            - Diese Netze können auch trainiert werden und für vorhersagen etc. genutzt werden.
+                            - Diese Netze können auch trainiert werden und für vorhersagen etc. genutzt werden. <br>
                         </aside>
                     </section>
                     <section data-background-image="assets/neuronalNetwork0.jpg" data-background-size="contain">
@@ -325,8 +337,8 @@
                             Neuron A gleichzeitig mit Neuron B aktiv ist, umso bevorzugter werden die beiden Neuronen
                             aufeinander reagieren" („what fires together, wires together“). <br>
                             - Dies hat Hebb anhand von Veränderungen der synaptischen Übertragung zwischen Neuronen
-                            nachgewiesen.
-                            - Nach diesem Prinzip werden noch heute neuronale Netzwerke aufgebaut.
+                            nachgewiesen. <br>
+                            - Nach diesem Prinzip werden noch heute neuronale Netzwerke aufgebaut. <br>
                         </aside>
                         <!--
                         framework for many different machine learning algorithms to work together and process complex data inputs</p>
@@ -340,7 +352,7 @@
                             ("Hello World" Anwendung der neuronalen Netze) <br>
                             - Neuronen nehmen immer einen Wert zwischen 0 und 1 an. In der ersten Ebene bildet jedes
                             Neuron die Helligkeit von einem Pixel ab. <br>
-                            - Jedes Neuron gibt dann Informationen an jedes Neuron aus der nächsten Ebene weiter.
+                            - Jedes Neuron gibt dann Informationen an jedes Neuron aus der nächsten Ebene weiter. <br>
                         </aside>
                     </section>
                     <section data-background-image="assets/neuronalNetwork2.png" data-background-size="contain">
@@ -354,7 +366,7 @@
                             - Die Gewichtung und der Schwellwert wird während dem Lernprozess angepasst und bestimmen
                             wie trainiert und effizient ein neuronales Netz ist.<br>
                             - Zum Start eines Lernprozesses sind die Werte komplett zufällig gewählt und werden dann je
-                            nach Ergebnis angepasst (Fehlerrückführung | Backpropagation).
+                            nach Ergebnis angepasst (Fehlerrückführung | Backpropagation). <br>
                         </aside>
                     </section>
                     <section data-background-image="assets/neuronalNetwork3_new.png" data-background-size="contain">
@@ -364,7 +376,7 @@
                             - Bei vielen Hidden Layers bezeichnet man ein neuronales Netzwerk als Deep Learning
                             Netzwerk<br>
                             - diese komplexen neuronalen Netzwerke werden für Spracherkennung, Bilderkennung, Natural
-                            Language Processing und Empfehlungssystemen (Amazon) genutzt.
+                            Language Processing und Empfehlungssystemen (Amazon) genutzt. <br>
                         </aside>
                     </section>
                 </section>
@@ -545,7 +557,7 @@
                             Arbeit möglich ist mit einem Grundeinkommen glücklich zu leben <br>
                         </aside>
                     </section>
-                    <section data-background-image="assets/landscape-of-human-competence.png"
+                    <section data-background-image="assets/futureLandscape.png"
                              data-background-size="contain">
                         <aside class="notes">
                             "We feel safe on our peaks, but, at the present rate those too will be submerged within
