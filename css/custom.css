@@ -6,6 +6,10 @@
     color: green;
 }
 
+.red {
+    color: #FF3660;
+}
+
 .small {
     font-size: small;
 }
